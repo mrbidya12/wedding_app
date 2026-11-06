@@ -1,0 +1,146 @@
+docker run --runtime nvidia --gpus all \
+    -v ~/.cache/huggingface:/root/.cache/huggingface \
+    -p 8000:8000 \
+    --ipc=host \
+    vllm/vllm-openai:latest \
+    --model razz-123/Cybersecurity_razz \
+    --dtype half \
+    --max-model-len 4096
+
+
+
+
+    # pip install grapheme
+import grapheme
+import unicodedata
+
+def split_clusters(text):
+    normalized = unicodedata.normalize("NFC", text)
+    return list(grapheme.graphemes(normalized))
+
+def reverse_clusters(text):
+    clusters = split_clusters(text)
+    return ''.join(reversed(clusters))
+
+# Test strings
+test_strings = [
+    "ଓଁ", "ଉହୁଁ", "କିଁଆ", "ସ୍ୱରୁପ", "ଅପ୍", "ବ୍ଲିଂ",
+    "ସ୍ବରୁପ୍", "ଦୁଃଖ", "ର୍ୟାକେଟ୍‌", "ର‍୍ୟାକେଟ୍‌",
+    "ସଂସ୍କୃଃ", "ଲେନ୍ସ", "ଲେନ୍‌ସ୍‌", "ପୁନର୍ଜ୍ଜୀବିତ",
+    "କ୍ଲୀଂହ୍ଲୀ", "ରୁକ୍ମିଣୀ", "ଯାଚ୍ଞ।", "କେଁ କଟର୍", "ହଠାତ୍‌",
+    "ନ୍ଦୁନ୍ଦୁଭି", "ଭର୍ତ୍ତୃହରି", "ପରାଙ୍‌ମୁଖ", "ସଂସ୍ଥାପକ",
+    "ଦୁର୍ଯ୍ୟୋଧନ", "ଅର୍ଜ୍ଜୁନ", "ଜଳାର୍ଣ୍ଣବ", "କଟକ",
+    "ଅସତ୍‌କର୍ମ", "ନୃପସ୍ଥାୟକ", "ଘୂର୍ଣ୍ଣିବାତ୍ୟା"
+]
+
+# Run reversal for each test string
+for text in test_strings:
+    reversed_text = reverse_clusters(text)
+    print("Original text:", text)
+    print("Reversed text:", reversed_text)
+    print()
+# pip install grapheme
+import grapheme
+import unicodedata
+
+def split_clusters(text):
+    normalized = unicodedata.normalize("NFC", text)
+    return list(grapheme.graphemes(normalized))
+
+def reverse_clusters(text):
+    clusters = split_clusters(text)
+    return ''.join(reversed(clusters))
+
+# Test strings
+test_strings = [
+    "ଓଁ", "ଉହୁଁ", "କିଁଆ", "ସ୍ୱରୁପ", "ଅପ୍", "ବ୍ଲିଂ",
+    "ସ୍ବରୁପ୍", "ଦୁଃଖ", "ର୍ୟାକେଟ୍‌", "ର‍୍ୟାକେଟ୍‌",
+    "ସଂସ୍କୃଃ", "ଲେନ୍ସ", "ଲେନ୍‌ସ୍‌", "ପୁନର୍ଜ୍ଜୀବିତ",
+    "କ୍ଲୀଂହ୍ଲୀ", "ରୁକ୍ମିଣୀ", "ଯାଚ୍ଞ।", "କେଁ କଟର୍", "ହଠାତ୍‌",
+    "ନ୍ଦୁନ୍ଦୁଭି", "ଭର୍ତ୍ତୃହରି", "ପରାଙ୍‌ମୁଖ", "ସଂସ୍ଥାପକ",
+    "ଦୁର୍ଯ୍ୟୋଧନ", "ଅର୍ଜ୍ଜୁନ", "ଜଳାର୍ଣ୍ଣବ", "କଟକ",
+    "ଅସତ୍‌କର୍ମ", "ନୃପସ୍ଥାୟକ", "ଘୂର୍ଣ୍ଣିବାତ୍ୟା"
+]
+
+# Run reversal for each test string
+for text in test_strings:
+    reversed_text = reverse_clusters(text)
+    print("Original text:", text)
+    print("Reversed text:", reversed_text)
+    print()
+
+
+# pip install grapheme
+import grapheme
+import unicodedata
+
+def split_clusters(text):
+    normalized = unicodedata.normalize("NFC", text)
+    return list(grapheme.graphemes(normalized))
+
+def reverse_clusters(text):
+    clusters = split_clusters(text)
+    return ''.join(reversed(clusters))
+
+# Test strings
+test_strings = [
+    "ଓଁ", "ଉହୁଁ", "କିଁଆ", "ସ୍ୱରୁପ", "ଅପ୍", "ବ୍ଲିଂ",
+    "ସ୍ବରୁପ୍", "ଦୁଃଖ", "ର୍ୟାକେଟ୍‌", "ର‍୍ୟାକେଟ୍‌",
+    "ସଂସ୍କୃଃ", "ଲେନ୍ସ", "ଲେନ୍‌ସ୍‌", "ପୁନର୍ଜ୍ଜୀବିତ",
+    "କ୍ଲୀଂହ୍ଲୀ", "ରୁକ୍ମିଣୀ", "ଯାଚ୍ଞ।", "କେଁ କଟର୍", "ହଠାତ୍‌",
+    "ନ୍ଦୁନ୍ଦୁଭି", "ଭର୍ତ୍ତୃହରି", "ପରାଙ୍‌ମୁଖ", "ସଂସ୍ଥାପକ",
+    "ଦୁର୍ଯ୍ୟୋଧନ", "ଅର୍ଜ୍ଜୁନ", "ଜଳାର୍ଣ୍ଣବ", "କଟକ",
+    "ଅସତ୍‌କର୍ମ", "ନୃପସ୍ଥାୟକ", "ଘୂର୍ଣ୍ଣିବାତ୍ୟା"
+]
+
+# Run reversal for each test string
+for text in test_strings:
+    reversed_text = reverse_clusters(text)
+    print("Original text:", text)
+    print("Reversed text:", reversed_text)
+    print()
+
+
+
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
+
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Function to check if the logged-in user is an admin
+    function isAdmin() {
+      return request.auth != null && 
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // 1. Service Providers (Vendors)
+    match /vendors/{vendorId} {
+      allow read: if true; // Everyone can see providers
+      allow write: if isAdmin(); // Only Admin can add/edit/delete vendors
+    }
+
+    // 2. Users (Clients, Providers, Admins)
+    match /users/{userId} {
+      // Users can see/edit their own profile
+      // Admins can see/edit/delete EVERY profile
+      allow read, write: if request.auth != null && (request.auth.uid == userId || isAdmin());
+    }
+
+    // 3. Bookings
+    match /bookings/{bookingId} {
+      // Users see their own bookings; Admins see all bookings
+      allow read, write: if request.auth != null && (request.auth.uid == resource.data.userId || isAdmin());
+      allow create: if request.auth != null;
+    }
+  }
+}

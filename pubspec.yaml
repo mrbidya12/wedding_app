@@ -1,0 +1,53 @@
+name: weddingpro_connect
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  firebase_core: ^3.1.1
+  firebase_auth: ^5.1.2
+  firebase_messaging: ^15.0.3
+  flutter_local_notifications: ^17.1.2
+  cloud_firestore: ^5.0.2
+  provider: ^6.1.2
+  intl: ^0.20.2
+  geolocator: ^10.1.0
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  flutter_svg: ^2.0.10+1
+  country_picker: ^2.0.25
+
+  # Backend & Chat
+  http: ^1.1.0
+  socket_io_client: ^3.0.0
+  web_socket_channel: ^3.0.1
+  flutter_secure_storage: ^9.0.0
+  
+  # QR Code Generation
+  qr_flutter: ^4.1.0
+
+  # Image Picking for Complaints/Portfolio
+  image_picker: ^1.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "android/assets/logo.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+  assets:
+    - android/assets/logo.png

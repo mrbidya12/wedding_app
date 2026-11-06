@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "642491662033",
+    "project_id": "weddingproconnect-2d6b0",
+    "storage_bucket": "weddingproconnect-2d6b0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642491662033:android:7b9abd57b13007e161cff0",
+        "android_client_info": {
+          "package_name": "com.example.weddingpro_connect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRASyjb0sWm2Ditmu7llEgrXaq9dOqdyc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
